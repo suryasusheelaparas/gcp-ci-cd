@@ -3,3 +3,5 @@ steps:
   args: ['build', '-t', 'us-central1-docker.pkg.dev/reflected-coder-372912/your-repo/httpd-app:latest', '.']
 - name: 'gcr.io/cloud-builders/docker'
   args: ['push', 'us-central1-docker.pkg.dev/reflected-coder-372912/your-repo/httpd-app:latest']
+options:
+  logging: 'CLOUD_LOGGING_ONLY'
